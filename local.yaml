@@ -1,0 +1,12 @@
+---
+
+- hosts: linux
+  gather_facts: true
+  vars:
+    jmeno: "cmatrix"
+  tasks:
+  - name: instalace cmatrix
+    register: r1
+    package:
+      name: "{{ jmeno }}"
+      state: present
