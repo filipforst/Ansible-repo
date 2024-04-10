@@ -1,6 +1,6 @@
 ---
 
-- hosts: linux
+- hosts: localhost
   gather_facts: true
   vars:
     jmeno: "cmatrix"
